@@ -1,6 +1,6 @@
 ### jest shallow 렌더링과 handler test 
 
-mount 렌더를 shallow 렌더로 변경했을 때 발생한 몇가지 오류
+mount 렌더를 shallow 렌더로 변경했을 때 만난 몇가지 오류
 
 before
 
@@ -18,7 +18,7 @@ expect(handler).toHaveBeenCalled()
  - Wrapped 된 StyledButton 컴포넌트 안 쪽에 button markup 이 존재할텐데 shallow 렌더링이라 못 찾음
  - StyledButton 의 displayName 을 'Button' 으로 변경하고 wrapper.find('Button') 으로 찾아 해결함
 
-#### 2. 하지만 mock 된 handler 가 호출되지 않았다고 나옴 
+#### 2. mock 된 handler 가 호출되지 않았다고 나옴 
  - mount로 렌더링 했을 때는 모두 패스 됐었음
  - 구글링을 해봄
  - 렌더링 이전 시점에 컴포넌트 prototype 에 존재하는 핸들러를 spyOn 하라고 나와있음
