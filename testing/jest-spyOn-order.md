@@ -24,7 +24,7 @@ expect(handler).toHaveBeenCalled()
  - 렌더링 이전 시점에 컴포넌트 prototype 에 존재하는 핸들러를 spyOn 하라고 나와있음
  - 다른 방법으로는 wrapper의 instance 를 가져온 후 forceUpdate() 를 호출하거나 wrapper의 update() 를 호출
  - 근데 바로 위 방법은 나도 알고 있었다! 그런데 동작을 안했음
- - 하여간 spyOn 을 하는 시점이 mount든 shallow든 렌더링 되는 시점보다 더 빨라서 다른 곳에 바인딩 되서 나타나는 문제
+ - 하여간 spyOn 을 하는 시점이 mount든 shallow든 렌더링 되는 시점보다 더 빨라 다른 객체에 바인딩 되는 문제
 
 
 
